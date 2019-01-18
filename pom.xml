@@ -13,7 +13,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>currency-exchange-service</name>
 	<description>Demo project for Spring Boot</description>
-
+	<packaging>jar</packaging>
+	
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Greenwich.RC2</spring-cloud.version>
@@ -53,6 +54,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<executable>true</executable>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
